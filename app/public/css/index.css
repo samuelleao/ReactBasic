@@ -1,0 +1,35 @@
+.indexStart{
+    display: flex;
+    padding-top: 100px;
+    justify-content: center;
+}
+
+.indexStart .start{
+    width: 80%;
+    display: flex;
+}
+
+.indexStart .start img{
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+}
+
+.indexStart .start div{
+    margin-top: 50px;
+    padding: 50px;
+    display: grid;
+}
+
+@media(max-width: 991px){
+    .indexStart .start div{
+        width: 100%;
+        padding: 5px 15px;
+        grid-gap: 2em;
+    }
+    .indexStart .start{
+        width: 100%;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+}

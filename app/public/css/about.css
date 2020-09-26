@@ -1,0 +1,36 @@
+.about{
+    display: flex;
+    padding-top: 100px;
+    justify-content: center;
+}
+
+.about .section1{
+    width: 80%;
+    display: flex;
+}
+
+.about .section1 img{
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+}
+
+.about .section1 div{
+    margin-top: 50px;
+    padding: 50px;
+    display: grid;
+    grid-gap: 2em;
+}
+
+
+@media(max-width: 991px){
+    .about .section1{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .about .section1 div{
+        padding: 5px 15px;
+        grid-gap: 2em;
+    }
+}

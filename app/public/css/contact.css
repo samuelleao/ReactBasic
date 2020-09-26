@@ -1,0 +1,75 @@
+.contactPage {
+    display: flex;
+    padding-top: 100px;
+    justify-content: center;
+}
+
+.contactPage .section1 {
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.contactPage .section1 img {
+    width: 40%;
+    height: 90%;
+    object-fit: cover;
+}
+
+.contactPage .section1 div {
+    padding: 0px 50px 0px 50px;
+    display: grid;
+    grid-gap: 2em;
+    width: 60%;
+}
+
+.contactPage form{
+    width: 90%;
+}
+
+.contactPage form .title{
+    margin-bottom: 1em;
+}
+
+.contactPage form input {
+    height: 60px;
+    border: 2px solid var(--color_grey);
+    border-radius: 10px;
+    padding: 0px 15px;
+    width: 100%;
+    margin-top: 10px;
+    outline-style: none;
+}
+
+form .button_primary {
+    width: 100%;
+    margin-top: 10px;
+}
+
+form #message {
+    height: 120px;
+}
+
+@media(max-width: 991px) {
+    .contactPage .section1 {
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    
+    .contactPage .section1 div {
+        padding: 5px 15px;
+        grid-gap: 2em;
+        width: 100%;
+    }
+
+    .contactPage .section1 img {
+        width: 100%;
+    }
+}
+
+@media(max-width: 991px) {
+    .contactPage form{
+        width: 100%;
+    }
+}
